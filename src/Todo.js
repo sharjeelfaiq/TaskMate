@@ -105,7 +105,15 @@ const Todo = () => {
           {/* The list of activities */}
           {listData.map((item, index) => (
             <Typography
-              style={{ textAlign: "left", paddingLeft: "10px" }}
+              style={{
+                textAlign: "left",
+                marginLeft: "10px",
+                marginRight: "10px",
+                paddingLeft: "5px",
+                marginBottom: "10px",
+                backgroundColor: "rgba(50, 78, 200, 0.1)",
+                borderRadius: "8%",
+              }}
               key={index}
             >
               {/* The activity text */}
@@ -123,7 +131,14 @@ const Todo = () => {
             </Typography>
           ))}
           {listData.length > 0 ? (
-            <Button onClick={deleteAll} color="error" variant="outlined">Delete All</Button>
+            <Button
+              onClick={deleteAll}
+              color="error"
+              variant="outlined"
+              sx={{ marginBottom: 1 }}
+            >
+              Delete All
+            </Button>
           ) : null}
         </Box>
       </Container>
