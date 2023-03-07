@@ -83,7 +83,7 @@ const Todo = () => {
         >
           {/* The app header */}
           <Typography variant="h3" style={{ textAlign: "center" }} gutterBottom>
-            TextMate
+            TaskMate
           </Typography>
           {/* The activity input */}
           <TextField
